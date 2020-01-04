@@ -11,5 +11,14 @@ namespace employee_commission_class
                      FEDERAL_TAX_RATE = .18,
                      RETIREMENT_RATE = .1,
                      SOCIAL_SECURITY_RATE = .06;
+        // data members
+        private string name;
+        private double weeklyTotalSales,
+                       commissionIncome,
+                       federalTaxes,
+                       retirementContrib,
+                       socialSecurity,
+                       totalDeductions,
+                       takeHomePay;
     }
 }
