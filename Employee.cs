@@ -7,9 +7,9 @@ namespace employee_commission_class
     class Employee
     {
         // constants
-        const double COMMISSION = .07,
-                     FEDERAL_TAX = .18,
-                     RETIREMENT = .1,
-                     SOCIAL_SECURITY = .06;
+        const double COMMISSION_RATE = .07,
+                     FEDERAL_TAX_RATE = .18,
+                     RETIREMENT_RATE = .1,
+                     SOCIAL_SECURITY_RATE = .06;
     }
 }
