@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Console;
 
 namespace employee_commission_class
 {
@@ -6,7 +7,7 @@ namespace employee_commission_class
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            WriteLine("Hello World!");
         }
     }
 }
