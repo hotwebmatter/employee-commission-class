@@ -8,7 +8,7 @@ namespace employee_commission_class
         static void Main(string[] args)
         {
             Employee salesman = new Employee();
-            WriteLine(salesman.Name);
+            WriteLine("{0} {1}", "Name:", salesman.Name);
         }
     }
 }
