@@ -36,5 +36,9 @@ namespace employee_commission_class
         {
             return commissionIncome * RETIREMENT_RATE;
         }
+        public double CalculateSocialSecurity()
+        {
+            return commissionIncome * SOCIAL_SECURITY_RATE;
+        }
     }
 }
