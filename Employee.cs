@@ -58,7 +58,9 @@ namespace employee_commission_class
         }
         public override string ToString()
         {
-            return base.ToString();
+            string result = String.Format("******* Employee Data Table *******\n");
+            result += String.Format("* {0, 12} {0, 18} *\n", "Name:", name);
+            return result;
         }
     }
 }
