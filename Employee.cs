@@ -23,6 +23,13 @@ namespace employee_commission_class
         // properties
         public string Name { set; get; }
         public double WeeklyTotalSales { set; get; }
+        // constructor
+        public Employee()
+        {
+            name = "Willy Loman";
+            weeklyTotalSales = 10000;
+            CalculateTakeHomePay();
+        }
         // methods
         public double CalculateCommission()
         {
