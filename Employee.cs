@@ -40,5 +40,14 @@ namespace employee_commission_class
         {
             return commissionIncome * SOCIAL_SECURITY_RATE;
         }
+        public void CalculateTakeHomePay()
+        {
+            commissionIncome = CalculateCommission();
+            federalTaxes = CalculateTax();
+            retirementContrib = CalculateRetirement();
+            socialSecurity = CalculateSocialSecurity();
+            totalDeductions = federalTaxes + retirementContrib + socialSecurity;
+            takeHomePay = commissionIncome - totalDeductions;
+        }
     }
 }
