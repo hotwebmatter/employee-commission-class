@@ -23,5 +23,10 @@ namespace employee_commission_class
         // properties
         public string Name { set; get; }
         public double WeeklyTotalSales { set; get; }
+        // methods
+        public double CalculateCommission()
+        {
+            return weeklyTotalSales * COMMISSION_RATE;
+        }
     }
 }
