@@ -56,5 +56,9 @@ namespace employee_commission_class
             totalDeductions = federalTaxes + retirementContrib + socialSecurity;
             takeHomePay = commissionIncome - totalDeductions;
         }
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }
