@@ -20,5 +20,8 @@ namespace employee_commission_class
                        socialSecurity,
                        totalDeductions,
                        takeHomePay;
+        // properties
+        public string Name { set; get; }
+        public double WeeklyTotalSales { set; get; }
     }
 }
