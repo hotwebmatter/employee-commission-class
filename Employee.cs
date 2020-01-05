@@ -32,5 +32,9 @@ namespace employee_commission_class
         {
             return commissionIncome * FEDERAL_TAX_RATE;
         }
+        public double CalculateRetirement()
+        {
+            return commissionIncome * RETIREMENT_RATE;
+        }
     }
 }
