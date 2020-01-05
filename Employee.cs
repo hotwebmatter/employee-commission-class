@@ -28,5 +28,9 @@ namespace employee_commission_class
         {
             return weeklyTotalSales * COMMISSION_RATE;
         }
+        public double CalculateTax()
+        {
+            return commissionIncome * FEDERAL_TAX_RATE;
+        }
     }
 }
