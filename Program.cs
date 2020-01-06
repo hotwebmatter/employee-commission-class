@@ -7,8 +7,26 @@ namespace employee_commission_class
     {
         static void Main(string[] args)
         {
-            Employee salesman = new Employee();
+            // declare variables needed to accept user input
+            string employeeName;
+            double weeklySales;
+            Write("Enter employee name: ");
+            employeeName = ReadLine();
+            weeklySales = ReadDouble("Enter weekly sales: ");
+            Employee salesman = new Employee(employeeName, weeklySales);
             WriteLine(salesman.ToString());
+        }
+        static double ReadDouble(string label)
+        {
+            double number;
+            Write("{0} ", label);
+            string userInput = ReadLine();
+            while (Double.TryParse(userInput, out number) == false)
+            {
+                Write("Invalid input!\n{0} ", label);
+                userInput = ReadLine();
+            }
+            return number;
         }
     }
 }
