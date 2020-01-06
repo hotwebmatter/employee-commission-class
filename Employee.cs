@@ -59,7 +59,15 @@ namespace employee_commission_class
         public override string ToString()
         {
             string result = String.Format("******* Employee Data Table *******\n");
-            result += String.Format("* {0, 12} {1, 18} *\n", "Name:", name);
+            result += String.Format("* {0, 18} {1, 12} *\n", "Employee Name:", name);
+            result += String.Format("* {0, 18} {1, 12:C} *\n", "Weekly Sales:", weeklyTotalSales);
+            result += String.Format("* {0, 18} {1, 12:C} *\n", "Commission:", commissionIncome);
+            result += String.Format("* {0, 18} {1, 12:C} *\n", "Federal Taxes:", federalTaxes);
+            result += String.Format("* {0, 18} {1, 12:C} *\n", "Retirement:", retirementContrib);
+            result += String.Format("* {0, 18} {1, 12:C} *\n", "Social Security:", socialSecurity);
+            result += String.Format("* {0, 18} {1, 12:C} *\n", "Total Deductions:", totalDeductions);
+            result += String.Format("* {0, 18} {1, 12:C} *\n", "Take Home Pay:", takeHomePay);
+            result += String.Format("***********************************\n");
             return result;
         }
     }
